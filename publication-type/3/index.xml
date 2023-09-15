@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3 | Academic</title>
+    <title>3 | Martin Brun</title>
     <link>https://example.com/publication-type/3/</link>
       <atom:link href="https://example.com/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
       <link>https://example.com/publication-type/3/</link>
     </image>
     
     <item>
-      <title>An example preprint / working paper</title>
-      <link>https://example.com/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Counterfactual thinking and inequality acceptance</title>
+      <link>https://example.com/publication/2023_jmp/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/2023_jmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How does social identity influence preferences for redistribution? </title>
+      <link>https://example.com/research/2024_chapter4/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/research/2024_chapter4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Narratives in gender roles and growth mindset: An RCT in teaching proposals using Computational Thinking</title>
+      <link>https://example.com/research/2024_ceibal/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/research/2024_ceibal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>After you. Cognition and health-distribution preferences</title>
+      <link>https://example.com/research/2023_chapter2/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/research/2023_chapter2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redistributive Preferences in High-Cognition Individuals</title>
+      <link>https://example.com/research/2023_chapter1/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/research/2023_chapter1/</guid>
+      <description></description>
     </item>
     
   </channel>
