@@ -125,6 +125,13 @@ a:hover {
     padding: 0;
 }
 
+.nav-links {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .nav-link {
     color: #000000;
     font-weight: normal;
@@ -272,7 +279,7 @@ a:hover {
 
 /* Publication Links Container */
 .publication-links {
-    margin-top: 0.5rem;
+    margin-top: 0;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -302,6 +309,40 @@ a:hover {
     background-color: #00c4fb;
     color: #ffffff;
     text-decoration: none;
+}
+
+/* Cite Details/Summary Styling */
+.cite-details {
+    margin-top: 0;
+    display: inline-block;
+}
+
+.cite-toggle {
+    background-color: transparent;
+    color: #00c4fb;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+    transition: none;
+    display: inline-block;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.cite-toggle:hover {
+    background-color: #00c4fb;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cite-content {
+    margin-top: 1rem;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
 }
 
 .abstract-content {
@@ -351,217 +392,17 @@ a:hover {
     margin: 0;
 }
 
-/* Teaching Specific Styles */
-.teaching-philosophy {
-    background-color: #ffffff;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-}
 
-.courses-section {
-    padding: 2rem 0;
-}
 
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
 
-.course-card {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: box-shadow 0.3s ease;
-}
 
-.course-card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-.course-title {
-    color: #3498db;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
 
-.course-details {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
-}
 
-.course-details p {
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
 
-.previous-courses {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-}
 
-.course-list {
-    list-style-type: disc;
-    margin-left: 2rem;
-}
 
-.course-list li {
-    margin-bottom: 0.5rem;
-    color: #555;
-}
 
-.student-resources {
-    background-color: #ffffff;
-    padding: 2rem 0;
-    margin-top: 2rem;
-}
-
-.resources-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.resource-item {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.resource-item h3 {
-    color: #3498db;
-    margin-bottom: 1rem;
-}
-
-/* Policy Specific Styles */
-.policy-overview {
-    background-color: #ffffff;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-}
-
-.current-policy-work,
-.past-policy-work {
-    padding: 2rem 0;
-}
-
-.policy-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.policy-item {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-left: 4px solid #e74c3c;
-    border-radius: 0 8px 8px 0;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.policy-item h3 {
-    color: #e74c3c;
-    margin-bottom: 1rem;
-}
-
-.policy-details {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.policy-details p {
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-
-/* Timeline Styles */
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: #3498db;
-    top: 0;
-    bottom: 0;
-    left: 50px;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 2rem 0;
-    padding-left: 120px;
-}
-
-.timeline-year {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #3498db;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: bold;
-    width: 80px;
-    text-align: center;
-    z-index: 1;
-}
-
-.timeline-content {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.timeline-content h3 {
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-}
-
-/* Policy Publications */
-.policy-publications {
-    background-color: #ffffff;
-    padding: 2rem 0;
-    margin: 2rem 0;
-}
-
-/* Media Commentary */
-.media-commentary {
-    padding: 2rem 0;
-}
-
-.media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.media-item {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.media-item h3 {
-    color: #8e44ad;
-    margin-bottom: 1rem;
-}
 
 /* Footer */
 .footer {
@@ -639,28 +480,16 @@ a:hover {
         grid-template-columns: 1fr;
     }
     
-    .course-grid,
-    .policy-grid {
-        grid-template-columns: 1fr;
-    }
+
+
     
-    .resources-grid,
-    .media-grid {
-        grid-template-columns: 1fr;
-    }
+
     
-    .timeline::after {
-        left: 30px;
-    }
+
     
-    .timeline-item {
-        padding-left: 80px;
-    }
+
     
-    .timeline-year {
-        width: 60px;
-        font-size: 0.9rem;
-    }
+
     
     h1 {
         font-size: 2rem;
@@ -681,15 +510,28 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    .nav-menu {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        width: 100%;
+        display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        width: 100%;
     }
     
     .nav-link {
-        text-align: center;
-        padding: 0.7rem;
+        text-align: left;
+        padding: 0.7rem 0;
+        display: block;
+    }
+    
+    .dark-mode-toggle {
+        align-self: flex-start;
+        margin: 0;
     }
     
     .profile-section,
@@ -698,7 +540,7 @@ a:hover {
     }
     
     .publication,
-    .course-card,
+
     .policy-item {
         padding: 1.5rem;
     }
@@ -821,6 +663,16 @@ body.dark-mode .abstract-toggle:hover {
     text-decoration: none;
 }
 
+body.dark-mode .cite-toggle {
+    color: #00c4fb;
+}
+
+body.dark-mode .cite-toggle:hover {
+    background-color: #00c4fb;
+    color: #121212;
+    text-decoration: none;
+}
+
 body.dark-mode .working-paper-link {
     color: #00c4fb;
 }
@@ -851,14 +703,7 @@ body.dark-mode .publication-details {
     color: #999999;
 }
 
-body.dark-mode .course-card {
-    background-color: #121212;
-    border-color: #333333;
-}
 
-body.dark-mode .course-title {
-    color: #00c4fb;
-}
 
 body.dark-mode .policy-item {
     background-color: #121212;
@@ -886,13 +731,7 @@ body.dark-mode .timeline-content h3 {
     color: #ffffff;
 }
 
-body.dark-mode .resource-item {
-    background-color: #121212;
-}
 
-body.dark-mode .resource-item h3 {
-    color: #00c4fb;
-}
 
 body.dark-mode .media-item {
     background-color: #121212;
@@ -908,15 +747,6 @@ body.dark-mode .footer {
     color: #b0b0b0;
 }
 
-body.dark-mode .course-list li {
-    color: #b0b0b0;
-}
-
-body.dark-mode .previous-courses {
-    background-color: #121212;
-}
-
-body.dark-mode .policy-details p,
-body.dark-mode .course-details p {
+body.dark-mode .policy-details p {
     color: #b0b0b0;
 }

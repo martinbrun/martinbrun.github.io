@@ -7,128 +7,173 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="teaching.html" class="nav-link active">Teaching</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="policy.html" class="nav-link">Policy</a>
-                    </li>
-                </ul>
-                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
-                    <span class="toggle-icon">🌙</span>
-                </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="teaching.html" class="nav-link active">Teaching</a>
+                <a href="policy.html" class="nav-link">Policy work</a>
             </div>
-        </nav>
-    </header>
+            <button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
+        </div>
+    </nav>
 
     <main class="main-content">
-        <section class="page-header">
-            <div class="container">
-                <h1>Teaching</h1>
-                <p class="page-subtitle">Courses and Educational Philosophy</p>
-            </div>
-        </section>
-
-        <section class="teaching-philosophy">
-            <div class="container">
-                <h2>Teaching Philosophy</h2>
-                <p>
-                    [This is a placeholder for your teaching philosophy. Please replace with your actual 
-                    teaching approach, educational beliefs, and methodologies. This section should reflect 
-                    your commitment to student learning and your pedagogical strategies.]
-                </p>
-            </div>
-        </section>
-
-        <section class="courses-section">
+        <!-- Current Courses Section -->
+        <section class="publications-section">
             <div class="container">
                 <h2>Current Courses</h2>
-                
-                <div class="course-grid">
-                    <article class="course-card">
-                        <h3 class="course-title">[Course Code]: [Course Title]</h3>
-                        <div class="course-details">
-                            <p><strong>Level:</strong> [Undergraduate/Graduate]</p>
-                            <p><strong>Credits:</strong> [X credits]</p>
-                            <p><strong>Semester:</strong> [Fall/Spring 2024]</p>
-                        </div>
-                        <div class="course-description">
-                            <p>
-                                [This is a placeholder course description. Replace with actual course information, 
-                                including learning objectives, key topics covered, and assessment methods. 
-                                Describe what students will gain from taking this course.]
+                <div class="publications-list">
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">
+                                [Course Code: Course Title]
                             </p>
+                            <p class="publication-authors">
+                                [Course Level - e.g., Undergraduate/Graduate]
+                            </p>
+                            <p class="publication-details">
+                                <em>Fall 2024</em> | [X] students
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://example.com/syllabus-1" target="_blank" class="working-paper-link">[syllabus]</a>
+                                <span class="link-separator">, </span>
+                                <details class="abstract-details">
+                                    <summary class="abstract-toggle">
+                                        [description]
+                                    </summary>
+                                    <div class="abstract-content">
+                                        <p>
+                                            [This is a placeholder course description. Replace with actual course description, 
+                                            learning objectives, and key topics covered.]
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="course-card">
-                        <h3 class="course-title">[Course Code]: [Advanced Course Title]</h3>
-                        <div class="course-details">
-                            <p><strong>Level:</strong> [Graduate]</p>
-                            <p><strong>Credits:</strong> [X credits]</p>
-                            <p><strong>Semester:</strong> [Spring 2024]</p>
-                        </div>
-                        <div class="course-description">
-                            <p>
-                                [Another placeholder course description. This should detail the advanced topics, 
-                                prerequisites, and specialized skills students will develop. Include information 
-                                about research components or practical applications if applicable.]
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">
+                                [Course Code: Advanced Economics]
                             </p>
+                            <p class="publication-authors">
+                                [Graduate Level]
+                            </p>
+                            <p class="publication-details">
+                                <em>Fall 2024</em> | [Y] students
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://example.com/syllabus-2" target="_blank" class="working-paper-link">[syllabus]</a>
+                                <span class="link-separator">, </span>
+                                <details class="abstract-details">
+                                    <summary class="abstract-toggle">
+                                        [description]
+                                    </summary>
+                                    <div class="abstract-content">
+                                        <p>
+                                            [This is a placeholder for a second course description. Replace with actual content 
+                                            describing the advanced topics, research methods, and analytical skills developed.]
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
                         </div>
                     </article>
-
-                    <article class="course-card">
-                        <h3 class="course-title">[Course Code]: [Specialized Seminar]</h3>
-                        <div class="course-details">
-                            <p><strong>Level:</strong> [Graduate/Advanced Undergraduate]</p>
-                            <p><strong>Credits:</strong> [X credits]</p>
-                            <p><strong>Semester:</strong> [Fall 2024]</p>
-                        </div>
-                        <div class="course-description">
-                            <p>
-                                [Placeholder for a specialized seminar description. This should highlight the 
-                                unique aspects of the seminar, discussion-based format, and the specific research 
-                                or theoretical focus that distinguishes it from regular courses.]
-                            </p>
-                        </div>
-                    </article>
-                </div>
-
-                <h2>Previous Courses</h2>
-                <div class="previous-courses">
-                    <ul class="course-list">
-                        <li>[Course Code]: [Previous Course Title] (Fall 2023, Spring 2023)</li>
-                        <li>[Course Code]: [Another Previous Course] (Fall 2022, Spring 2024)</li>
-                        <li>[Course Code]: [Research Methods Course] (Fall 2023)</li>
-                        <li>[Course Code]: [Introductory Course] (Multiple semesters)</li>
-                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="student-resources">
+        <!-- Past Courses Section -->
+        <section class="publications-section">
             <div class="container">
-                <h2>Student Resources</h2>
-                <div class="resources-grid">
-                    <div class="resource-item">
-                        <h3>Office Hours</h3>
-                        <p>[Days and times] or by appointment. Please email to schedule outside regular hours.</p>
-                    </div>
-                    <div class="resource-item">
-                        <h3>Academic Support</h3>
-                        <p>[Information about tutoring, writing centers, or other academic support resources available to students.]</p>
-                    </div>
-                    <div class="resource-item">
-                        <h3>Research Opportunities</h3>
-                        <p>[Information about undergraduate research opportunities, independent studies, or thesis supervision.]</p>
-                    </div>
+                <h2>Past Courses</h2>
+                <div class="publications-list">
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">
+                                [Course Code: Previous Course Title]
+                            </p>
+                            <p class="publication-authors">
+                                [Course Level]
+                            </p>
+                            <p class="publication-details">
+                                <em>Spring 2024</em> | [Z] students
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://example.com/syllabus-3" target="_blank" class="working-paper-link">[syllabus]</a>
+                                <span class="link-separator">, </span>
+                                <details class="abstract-details">
+                                    <summary class="abstract-toggle">
+                                        [description]
+                                    </summary>
+                                    <div class="abstract-content">
+                                        <p>
+                                            [Course description placeholder - replace with actual course content and objectives.]
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">
+                                [Course Code: Research Methods]
+                            </p>
+                            <p class="publication-authors">
+                                [Graduate Level]
+                            </p>
+                            <p class="publication-details">
+                                <em>Fall 2023</em> | [W] students
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://example.com/syllabus-4" target="_blank" class="working-paper-link">[syllabus]</a>
+                                <span class="link-separator">, </span>
+                                <details class="abstract-details">
+                                    <summary class="abstract-toggle">
+                                        [description]
+                                    </summary>
+                                    <div class="abstract-content">
+                                        <p>
+                                            [Course description placeholder - replace with actual course content and objectives.]
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">
+                                [Course Code: Introductory Economics]
+                            </p>
+                            <p class="publication-authors">
+                                [Undergraduate Level]
+                            </p>
+                            <p class="publication-details">
+                                <em>Spring 2023</em> | [V] students
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://example.com/syllabus-5" target="_blank" class="working-paper-link">[syllabus]</a>
+                                <span class="link-separator">, </span>
+                                <details class="abstract-details">
+                                    <summary class="abstract-toggle">
+                                        [description]
+                                    </summary>
+                                    <div class="abstract-content">
+                                        <p>
+                                            [Course description placeholder - replace with actual course content and objectives.]
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -136,7 +181,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Martín Brun. All rights reserved.</p>
+            <p>Last update: July 2025.</p>
         </div>
     </footer>
     <script src="dark-mode.js"></script>
