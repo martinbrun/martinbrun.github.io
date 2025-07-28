@@ -289,6 +289,7 @@ a:hover {
 /* Abstract Details/Summary Styling */
 .abstract-details {
     margin-top: 0;
+    margin-bottom: 0;
     display: inline-block;
 }
 
@@ -315,6 +316,7 @@ a:hover {
 /* Cite Details/Summary Styling */
 .cite-details {
     margin-top: 0;
+    margin-bottom: 0;
     display: inline-block;
 }
 
@@ -339,7 +341,8 @@ a:hover {
 }
 
 .cite-content {
-    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-top: .25rem;
     padding: 0;
     background-color: transparent;
     border-radius: 0;
@@ -347,7 +350,8 @@ a:hover {
 }
 
 .abstract-content {
-    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-top: .25rem;
     padding: 0;
     background-color: transparent;
     border-radius: 0;
