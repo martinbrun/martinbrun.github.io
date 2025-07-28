@@ -355,8 +355,7 @@ a:hover {
 
 /* Working Paper Link Styles */
 .link-separator {
-    color: #666;
-    font-size: 0.9rem;
+    color: #000000;
 }
 
 .working-paper-link {
