@@ -1,108 +1,564 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Martín Brun</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="nav-container">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="teaching.html" class="nav-link"
+                                >Teaching</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="policy.html" class="nav-link">Policy</a>
+                        </li>
+                    </ul>
+                    <button
+                        id="dark-mode-toggle"
+                        class="dark-mode-toggle"
+                        aria-label="Toggle dark mode"
+                    >
+                        <span class="toggle-icon">🌙</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
 
-<head>
-	<!-- Google Tag Manager -->
-		<script>
-			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-WGX2HVRM');
-		</script>
-	<!-- Google Tag Manager -->
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img
+                            src="img/me.jpg"
+                            alt="Martín Brun"
+                            class="profile-photo"
+                        />
+                    </div>
+                    <div class="profile-info">
+                        <h1>Martín Brun</h1>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <div class="bio">
+                            <p>
+                                Postdoctoral Research Fellow at the
+                                <a href="https://verotutkimus.fi/en/home/">
+                                    Finnish Centre of Excellence in Tax Systems
+                                    Research (FIT)
+                                </a>
+                                at
+                                <a href="https://www.tuni.fi/en">
+                                    Tampere University </a
+                                >.
+                            </p>
+                            <p>
+                                Interested in Behavioral Economics, with a
+                                particular focus on
+                                <b>social preferences</b> and
+                                <b>bounded rationality</b>.
+                            </p>
+                            <p>
+                                Obtained my PhD at
+                                <a
+                                    href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html"
+                                >
+                                    Universitat Autònoma de Barcelona (UAB) </a
+                                >. Affiliated to
+                                <a href="http://www.equalitas.es/en">
+                                    Economics of Inequality and Poverty Analysis
+                                    (EQUALITAS)
+                                </a>
+                                and
+                                <a href="http://waplac.org/">
+                                    Network on Welfare and Policy in Latin
+                                    America and the the Caribbean (WAPLAC) </a
+                                >.
+                            </p>
+                        </div>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	
-	<style>
-		.abs-padding {
-			padding-bottom:15px !important;
-			margin-left:20px !important;
-		}
-	</style>
-
-	<title>Martín Brun</title>
-</head>
-
-<body>
-	<!-- Google Tag Manager -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGX2HVRM"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- Google Tag Manager -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	
-	<div class="container">
-		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-		  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-			<span class="fs-1">Martín Brun</span>
-		  </a>
-	
-		  <ul class="nav nav-pills">
-			<!--<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>-->
-			<!--<li class="nav-item"><a href="./other.htm" class="nav-link">Other Stuff</a></li>-->
-		  </ul>
-		</header>
-	  </div>
-	<div class="container-lg ">
-	<div class="row justify-content-between">
-	  <div class="col-sm-3">
-		  <img src="./img/me_202409.jpeg" class="img-fluid" />
-		  <hr/>
-		  
-			<div><a href="https://scholar.google.com/citations?user=4DHIF58AAAAJ&hl=en" target="_blank">Google Scholar</a> </div>
-			<div><a href="https://bsky.app/profile/martinbrun.bsky.social" target="_blank">Bluesky</a></div>
-			<br/>
-	</div>
-	<div class = "col-sm-8">
-		<div>
-			<h4>About me</h4>
-
-			Postdoctoral Research Fellow at the Finnish Centre of Excellence in Tax Systems Research (FIT) at Tampere University. 
-
-Interested in Behavioral Economics, with a particular focus on social preferences and bounded rationality. 
-
-Obtained my PhD at Universitat Autònoma de Barcelona (UAB). Affiliated to Economics of Inequality and Poverty Analysis (EQUALITAS) and Network on Welfare and Policy in Latin America and the the Caribbean (WAPLAC).
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                martin [dot] brun [at] tuni [dot] fi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
-			<p>Postdoctoral Research Fellow at the <a href="https://verotutkimus.fi/en/home/" target="_blank" rel="noopener">Finnish Centre of Excellence in Tax Systems Research (FIT)</a> at <a href="https://www.tuni.fi/en" target="_blank" rel="noopener">Tampere University</a>
-			<b>Email:</b> martin.brun@tuni.fi</p>
-			<p> You can find my <b>CV</b> <a href="./docs/cv.pdf" target=_blank>here</a></p>
-		</div>
-		<br/>
-		<div>
-			<h4>Working papers</h4>
-			<div>
-				<p><b>Will Artificial Intelligence get in the way of achieving gender equality?</b>
-				<br>(with Catalina Franco and Siri Isaksson) 
-				<!-- <br><i>submitted</i> --> </p>
-				<p><a class="" role="button" data-bs-toggle="collapse" href="#abs4" aria-expanded="false" aria-controls="abs4">Abstract</a> | 
-					<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4759218" target=_blank>Paper</a> 
-				</p>
-				<div class="collapse abs-padding" id="abs4">We conduct two surveys with preregistered experiments to examine gender differences in generative AI adoption and potential labor market consequences. First, we document a substantial gender gap in AI adoption among students at a top business school in Norway, with female students, particularly top students, opting out of AI use. Second, a survey of managers shows that acquiring AI skills would significantly enhance job prospects for top female students currently avoiding AI. Finally, we provide causal evidence on policy tools to close the gender gap in AI adoption. Our findings show that generative AI could widen existing gender gaps in the labor market, but appropriate policies can help prevent this outcome.</div>
-			<div>
-				<p><b>Exposure to diversity, social proximity and ingroup bias</b>
-				<br><i>revise & resubmit, <u>The Economic Journal</u></i> </p>
-				<p><a class="" role="button" data-bs-toggle="collapse" href="#abs5" aria-expanded="false" aria-controls="abs5">Abstract</a> | 
-					<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4916008" target=_blank>Paper</a> 
-				</p>
-			<div class="collapse abs-padding" id="abs5">As society becomes increasingly diverse, will changes in an individual's exposure to diversity influence their interactions with others? I study prosocial behavior in a large-scale U.S. sample, where participants are exogenously exposed to social contexts with varying levels of nationality diversity. I find that diverse contexts amplify participants' ingroup bias&ndash;the tendency to favor one's own group&ndash;driven by increased allocations towards fellow nationals and decreased allocations to foreigners, relative to giving in homogeneous contexts where such bias is not present. A change in perceptions of social proximity corresponds to a driver of the effect of diversity in allocations. The findings are consistent across subgroups of the population, which suggests that the study identifies a general heuristic through which individuals identify with groups, where social context&ndash;and not only individual characteristics&ndash;is key for the emergence of ingroup bias. <br/></div>
-			</div>
-			<br/>
-			<h4>Work in progress</h4>
-			<div>
-			<p><b>The role of a majority-minority status and ingroup affinity in shaping social preferences</b></p>
-			</div>
-		</div>
 
-		
-	</div>
-</div>
-</div>
-  </body>
+            <!-- Work in Progress Section -->
+            <section class="publications-section">
+                <div class="container">
+                    <h2>Work in Progress</h2>
+                    <div class="publications-list">
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Work in Progress Title: Research Project]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>Working Paper</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-1" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for work in progress. 
+                                                Replace with actual project description including current 
+                                                stage, methodology, and expected contributions.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
 
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Second Work in Progress: Behavioral Study]
+                                </p>
+                                <p class="publication-authors">
+                                    [Co-author Name], Martín Brun
+                                </p>
+                                <p class="publication-details">
+                                    <em>Working Paper</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-2" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the second work in progress. 
+                                                Replace with actual project description including current 
+                                                stage, methodology, and expected contributions.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Third Work in Progress: Economic Analysis]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name], [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>Working Paper</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-3" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the third work in progress. 
+                                                Replace with actual project description including current 
+                                                stage, methodology, and expected contributions.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Fourth Work in Progress: Policy Research]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun
+                                </p>
+                                <p class="publication-details">
+                                    <em>Working Paper</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-4" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the fourth work in progress. 
+                                                Replace with actual project description including current 
+                                                stage, methodology, and expected contributions.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Fifth Work in Progress: Econometric Study]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name], [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>Working Paper</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-5" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the fifth work in progress. 
+                                                Replace with actual project description including current 
+                                                stage, methodology, and expected contributions.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Submitted Papers Section -->
+            <section class="publications-section">
+                <div class="container">
+                    <h2>Submitted Papers</h2>
+                    <div class="publications-list">
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Submitted Paper Title: Research Study]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>Under Review at [Journal Name]</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-6" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for submitted papers. 
+                                                Replace with actual paper abstract including research 
+                                                question, methodology, and main findings.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Second Submitted Paper: Empirical Analysis]
+                                </p>
+                                <p class="publication-authors">
+                                    [Co-author Name], Martín Brun, [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>Under Review at [Journal Name]</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-7" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the second submitted paper. 
+                                                Replace with actual paper abstract including research 
+                                                question, methodology, and main findings.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Third Submitted Paper: Policy Analysis]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun
+                                </p>
+                                <p class="publication-details">
+                                    <em>Under Review at [Journal Name]</em> (2025)
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-8" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the third submitted paper. 
+                                                Replace with actual paper abstract including research 
+                                                question, methodology, and main findings.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reproducibility in Economics Section -->
+            <section class="publications-section">
+                <div class="container">
+                    <h2>Reproducibility in Economics</h2>
+                    <p class="section-description">
+                        I collaborate on initiatives to improve the reproducibility of economics research, focusing on replicating published studies and enhancing the reliability of findings. I have co-authored the following papers with large teams, contributing to collective efforts in advancing robustness in empirical research.
+                    </p>
+                    <div class="publications-list">
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Reproducibility Paper Title: Methodological Study]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>[Journal of Computational Economics]</em> (2024), Vol. X, pp. XXX-XXX
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-9" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                            We use a rigorous three-stage many-analysts design to assess how different researcher decisions—specifically data cleaning, research design, and the interpretation of a policy question—affect the variation in estimated treatment effects. A total of 146 research teams each completed the same causal inference task three times each: first with few constraints, then using a shared research design, and finally with pre-cleaned data in addition to a specified design. We find that even when analyzing the same data, teams reach different conclusions. In the first stage, the interquartile range (IQR) of the reported policy effect was 3.1 percentage points, with substantial outliers. Surprisingly, the second stage, which restricted research design choices, exhibited slightly higher IQR (4.0 percentage points), largely attributable to imperfect adherence to the prescribed protocol. By contrast, the final stage, featuring standardized data cleaning, narrowed variation in estimated effects, achieving an IQR of 2.4 percentage points. Reported sample sizes also displayed significant convergence under more restrictive conditions, with the IQR dropping from 295,187 in the first stage to 29,144 in the second, and effectively zero by the third. Our findings underscore the critical importance of data cleaning in shaping applied microeconomic results and highlight avenues for future replication efforts.
+</p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Second Reproducibility Paper: Computational Methods]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name], [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>[Journal of Economic Methodology]</em> (2024), Vol. X, pp. XXX-XXX
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-10" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the second reproducibility paper. 
+                                                Replace with actual abstract focusing on computational methods, 
+                                                replication studies, or open science contributions.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pre-PhD Publications Section -->
+            <section class="publications-section">
+                <div class="container">
+                    <h2>Pre-PhD Publications</h2>
+                    <div class="publications-list">
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Pre-PhD Publication Title: Early Research]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun
+                                </p>
+                                <p class="publication-details">
+                                    <em>[Undergraduate Journal or Conference]</em> (2020), pp. XXX-XXX
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-11" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for pre-PhD work. 
+                                                Replace with actual abstract from undergraduate research, 
+                                                thesis work, or early career publications.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Second Pre-PhD Publication: Undergraduate Research]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun, [Co-author Name]
+                                </p>
+                                <p class="publication-details">
+                                    <em>[Conference Proceedings]</em> (2021), pp. XXX-XXX
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-12" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the second pre-PhD work. 
+                                                Replace with actual abstract from undergraduate research, 
+                                                thesis work, or early career publications.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Third Pre-PhD Publication: Student Paper]
+                                </p>
+                                <p class="publication-authors">
+                                    [Co-author Name], Martín Brun
+                                </p>
+                                <p class="publication-details">
+                                    <em>[Student Journal]</em> (2020), Vol. X, pp. XXX-XXX
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-13" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the third pre-PhD work. 
+                                                Replace with actual abstract from undergraduate research, 
+                                                thesis work, or early career publications.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="publication">
+                            <div class="publication-content">
+                                <p class="publication-title">
+                                    [Fourth Pre-PhD Publication: Thesis Chapter]
+                                </p>
+                                <p class="publication-authors">
+                                    Martín Brun
+                                </p>
+                                <p class="publication-details">
+                                    <em>[University Repository]</em> (2019), pp. XXX-XXX
+                                </p>
+                                <div class="publication-links">
+                                    <a href="https://example.com/working-paper-14" target="_blank" class="working-paper-link">[working-paper]</a>
+                                    <span class="link-separator">, </span>
+                                    <details class="abstract-details">
+                                        <summary class="abstract-toggle">
+                                            [abstract]
+                                        </summary>
+                                        <div class="abstract-content">
+                                            <p>
+                                                [This is a placeholder abstract for the fourth pre-PhD work. 
+                                                Replace with actual abstract from undergraduate research, 
+                                                thesis work, or early career publications.]
+                                            </p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>Last update: July 2025.</p>
+            </div>
+        </footer>
+        <script src="dark-mode.js"></script>
+    </body>
 </html>
