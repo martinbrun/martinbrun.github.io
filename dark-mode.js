@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sol.style.verticalAlign = "middle";
 
     const luna = document.createElement("img");
-    luna.src = "img/luna.png"; 
+    luna.src = "img/luna-cuneo.png"; 
     luna.style.height = "2em";
     luna.style.verticalAlign = "middle";
     
