@@ -269,6 +269,11 @@ a:hover {
     font-style: italic;
 }
 
+.course-details {
+    margin-bottom: 0rem;
+    color: #7f7f7f;
+}
+
 /* Section Description */
 .section-description {
     margin-bottom: 2rem;
@@ -707,6 +712,9 @@ body.dark-mode .publication-details {
     color: #999999;
 }
 
+body.dark-mode .course-details {
+    color: #999999;
+}
 
 
 body.dark-mode .policy-item {
