@@ -1,6 +1,15 @@
 // Dark mode toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const sol = document.createElement("img");
+    sol.src = "img/sol.png"; 
+    sol.style.height = "2em";
+    sol.style.verticalAlign = "middle";
+
+    const luna = document.createElement("img");
+    luna.src = "img/luna.png"; 
+    luna.style.height = "2em";
+    luna.style.verticalAlign = "middle";
     
     if (!darkModeToggle) {
         console.error('Dark mode toggle button not found!');
@@ -16,10 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply the saved theme
     if (isDarkMode) {
         body.classList.add('dark-mode');
-        toggleIcon.textContent = '☀️';
+        toggleIcon.textContent = ""; // clear existing content
+        toggleIcon.appendChild(sol);
     } else {
         body.classList.remove('dark-mode');
-        toggleIcon.textContent = '🌙';
+        toggleIcon.textContent = ""; // clear existing content
+        toggleIcon.appendChild(luna);
     }
 
     // Toggle dark mode on button click
@@ -28,8 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const isDark = body.classList.contains('dark-mode');
         
         // Update icon
-        toggleIcon.textContent = isDark ? '☀️' : '🌙';
-        
+        toggleIcon.textContent = "";
+        toggleIcon.appendChild(isDark ? sol : luna);
+        // Update
         // Save preference
         localStorage.setItem('darkMode', isDark);
     });
