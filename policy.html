@@ -8,170 +8,148 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="teaching.html" class="nav-link">Teaching</a>
-                <a href="policy.html" class="nav-link active">Policy work</a>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="teaching.html" class="nav-link">Teaching</a></li>
+                    <li class="nav-item"><a href="policy.html" class="nav-link active">Policy</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon">🌙</span>
+                </button>
             </div>
-            <button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main class="main-content">
-        <!-- Current Policy Work Section -->
         <section class="publications-section">
             <div class="container">
-                <h2>Current Policy Work</h2>
+                <p class="section-description">
+                    For almost a decade I worked as a consultant assessing policymakers in developing countries.
+                    I collaborated with <a href="https://www.cepal.org/en">United Nations</a>, the <a href="https://www.worldbank.org/en/home">World Bank</a>, and the <a href="https://www.ilo.org/global/lang--en/index.htm">International Labour Organization</a> in research projects on labor, inequality and trade in Latin America, South Asia, and Africa. 
+                    Many of those projects resulted in inputs for policies or internal documents for discussion among policymakers. Some of that work is open-access:
+                </p>
+            </div>
+        </section>
+
+        
+        <!-- Policy Reports Section -->
+        <section class="publications-section">
+            <div class="container">
+                <h2>Policy Reports</h2>
                 <div class="publications-list">
                     <article class="publication">
                         <div class="publication-content">
-                            <p class="publication-title">
-                                [Policy Project Title: Economic Policy Analysis]
-                            </p>
-                            <p class="publication-authors">
-                                [Role/Position - e.g., Policy Advisor, Consultant]
-                            </p>
-                            <p class="publication-details">
-                                <em>[Organization/Institution]</em> | 2024-2025
-                            </p>
+                            <p class="publication-title">A Narrow Path to Prosperity. Malawi Country Economic Memorandum</p>
+                            <p class="publication-authors">Ed. Jakob Engel</p>
+                            <p class="publication-details">World Bank Group</p>
                             <div class="publication-links">
                                 <a href="https://example.com/policy-report-1" target="_blank" class="working-paper-link">[report]</a>
-                                <span class="link-separator">, </span>
-                                <details class="abstract-details">
-                                    <summary class="abstract-toggle">
-                                        [description]
-                                    </summary>
-                                    <div class="abstract-content">
-                                        <p>
-                                            [This is a placeholder policy work description. Replace with actual description of the policy project, its objectives, and impact.]
-                                        </p>
-                                    </div>
-                                </details>
+                                <span class="link-separator">,&nbsp;</span>
+                                <a href="https://example.com/policy-report-1" target="_blank" class="working-paper-link">[summary]</a>
+                                <span class="link-separator">,&nbsp;</span>
+                                <a href="https://example.com/policy-report-1" target="_blank" class="working-paper-link">[news]</a>
+                            </div>
+                        </div>
+                    </article>
+
+                                        <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">Slow Rockets and Fast Feathers or the Link between Exchange Rates and Exports. A case study for Pakistan</p>
+                            <p class="publication-authors">Martín Brun, Juan Pedro Gambetta, Gonzalo J. Varela</p>
+                            <p class="publication-details">World Bank Group: Macroeconomics, Trade and Investment Global Practice</p>
+                            <div class="publication-links">
+                                <a href="https://openknowledge.worldbank.org/entities/publication/c7faa58b-df84-5e77-9806-002ce9ff8e8c" target="_blank" class="working-paper-link">[report]</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="publication">
                         <div class="publication-content">
-                            <p class="publication-title">
-                                [Policy Initiative: Social Welfare Reform]
-                            </p>
-                            <p class="publication-authors">
-                                [Researcher/Analyst]
-                            </p>
-                            <p class="publication-details">
-                                <em>[Government Agency/Think Tank]</em> | 2024
-                            </p>
+                            <p class="publication-title">Medición de la pobreza monetaria en el Uruguay: conceptos, metodologías, evolución y alternativas</p>
+                            <p class="publication-authors">Martín Brun, Maira Colacce</p>
+                            <p class="publication-details">United Nations Economic Commission for Latin America and the Caribbean</p>
                             <div class="publication-links">
-                                <a href="https://example.com/policy-report-2" target="_blank" class="working-paper-link">[report]</a>
-                                <span class="link-separator">, </span>
-                                <details class="abstract-details">
-                                    <summary class="abstract-toggle">
-                                        [description]
-                                    </summary>
-                                    <div class="abstract-content">
-                                        <p>
-                                            [This is a placeholder for a second policy work description. Replace with actual content describing the policy research and recommendations.]
-                                        </p>
-                                    </div>
-                                </details>
+                                <a href="https://www.cepal.org/es/publicaciones/44415-medicion-la-pobreza-monetaria-uruguay-conceptos-metodologias-evolucion" target="_blank" class="working-paper-link">[report]</a>
                             </div>
                         </div>
                     </article>
+                    
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">Gravámenes incluidos en las cadenas exportadoras del Uruguay</p>
+                            <p class="publication-authors">Martín Brun, Álvaro Lalanne</p>
+                            <p class="publication-details">United Nations Economic Commission for Latin America and the Caribbean</p>
+                            <div class="publication-links">
+                                <a href="https://www.cepal.org/es/publicaciones/43527-gravamenes-incluidos-cadenas-exportadoras-uruguay" target="_blank" class="working-paper-link">[report]</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">Origen del valor en las exportaciones del Uruguay</p>
+                            <p class="publication-authors">Martín Brun, Álvaro Lalanne</p>
+                            <p class="publication-details">United Nations Economic Commission for Latin America and the Caribbean</p>
+                            <div class="publication-links">
+                                <a href="https://www.cepal.org/es/publicaciones/41810-origen-valor-exportaciones-uruguay" target="_blank" class="working-paper-link">[report]</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">Los ingresos y egresos de los gobiernos departamentales entre 1990 y 2013</p>
+                            <p class="publication-authors">Álvaro Lalanne, Martín Brun</p>
+                            <p class="publication-details">United Nations Economic Commission for Latin America and the Caribbean</p>
+                            <div class="publication-links">
+                                <a href="https://repositorio.cepal.org/handle/11362/38919" target="_blank" class="working-paper-link">[report]</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="publication-content">
+                            <p class="publication-title">Las compras públicas como herramienta de política productiva en Uruguay. Descripción de las compras públicas de TIC en 2005-2012</p>
+                            <p class="publication-authors">Carlos Bianchi, Martín Brun</p>
+                            <p class="publication-details">Economics Institute, Universidad de la República (UdelaR)</p>
+                            <div class="publication-links">
+                                <a href="https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/4247" target="_blank" class="working-paper-link">[report]</a>
+                            </div>
+                        </div>
+                    </article>                 
                 </div>
             </div>
         </section>
 
-        <!-- Past Policy Work Section -->
+        <!-- Data Contribution Section -->
         <section class="publications-section">
             <div class="container">
                 <h2>Past Policy Work</h2>
                 <div class="publications-list">
                     <article class="publication">
                         <div class="publication-content">
-                            <p class="publication-title">
-                                [Previous Policy Project: Labor Market Analysis]
-                            </p>
-                            <p class="publication-authors">
-                                [Senior Analyst]
-                            </p>
-                            <p class="publication-details">
-                                <em>[International Organization]</em> | 2023
-                            </p>
+                            <p class="publication-title">CEPALSTAT (ECLAC-UN)</p>
+                            <p class="publication-authors">Rich dataset of demographic, social, economic, and environmental statistics for Latin America.</p>
+                            <p class="publication-details">I collaborated on the 2021 update of the social statistics estimates process.</p>
                             <div class="publication-links">
-                                <a href="https://example.com/policy-report-3" target="_blank" class="working-paper-link">[report]</a>
-                                <span class="link-separator">, </span>
-                                <details class="abstract-details">
-                                    <summary class="abstract-toggle">
-                                        [description]
-                                    </summary>
-                                    <div class="abstract-content">
-                                        <p>
-                                            [Policy work description placeholder - replace with actual project details and outcomes.]
-                                        </p>
-                                    </div>
-                                </details>
+                                <a href="https://statistics.cepal.org/portal/cepalstat/index.html?lang=en" target="_blank" class="working-paper-link">[link]</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="publication">
                         <div class="publication-content">
-                            <p class="publication-title">
-                                [Policy Research: Education Economics]
-                            </p>
-                            <p class="publication-authors">
-                                [Research Fellow]
-                            </p>
-                            <p class="publication-details">
-                                <em>[Research Institute]</em> | 2022-2023
-                            </p>
+                            <p class="publication-title">Regional Budgets (OPP-UY)</p>
+                            <p class="publication-authors">Budget data for Uruguayan regions.</p>
+                            <p class="publication-details">I collaborated on the 2015 initial release with data stretching back to 1989.</p>
                             <div class="publication-links">
-                                <a href="https://example.com/policy-report-4" target="_blank" class="working-paper-link">[report]</a>
-                                <span class="link-separator">, </span>
-                                <details class="abstract-details">
-                                    <summary class="abstract-toggle">
-                                        [description]
-                                    </summary>
-                                    <div class="abstract-content">
-                                        <p>
-                                            [Policy work description placeholder - replace with actual project details and outcomes.]
-                                        </p>
-                                    </div>
-                                </details>
+                                <a href="https://otu.opp.gub.uy/finanzas" target="_blank" class="working-paper-link">[link]</a>
                             </div>
                         </div>
-                    </article>
-
-                    <article class="publication">
-                        <div class="publication-content">
-                            <p class="publication-title">
-                                [Consulting Work: Poverty Assessment]
-                            </p>
-                            <p class="publication-authors">
-                                [Independent Consultant]
-                            </p>
-                            <p class="publication-details">
-                                <em>[Development Agency]</em> | 2022
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://example.com/policy-report-5" target="_blank" class="working-paper-link">[report]</a>
-                                <span class="link-separator">, </span>
-                                <details class="abstract-details">
-                                    <summary class="abstract-toggle">
-                                        [description]
-                                    </summary>
-                                    <div class="abstract-content">
-                                        <p>
-                                            [Policy work description placeholder - replace with actual project details and outcomes.]
-                                        </p>
-                                    </div>
-                                </details>
-                            </div>
-                        </div>
-                    </article>
+                    </article>                    
                 </div>
             </div>
         </section>
