@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const sol = document.createElement("img");
     sol.src = "img/sol.png"; 
-    sol.style.height = "2em";
+    sol.style.height = "1.5em";
     sol.style.verticalAlign = "middle";
 
     const luna = document.createElement("img");
     luna.src = "img/luna-cuneo.png"; 
-    luna.style.height = "2em";
+    luna.style.height = "1.5em";
     luna.style.verticalAlign = "middle";
     
     if (!darkModeToggle) {
