@@ -5,16 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
     sol.src = "img/sol.png"; 
     sol.style.height = "1em";
     sol.style.transform = "scale(1.5)";
-    sol.style.verticalAlign = "top";
     sol.style.horizontalAlign = "center";
 
     const luna = document.createElement("img");
     luna.src = "img/luna-cuneo.png"; 
     luna.style.height = "1em";
     luna.style.transform = "scale(1.5)";
-    luna.style.verticalAlign = "top";
     luna.style.horizontalAlign = "center";
     
+    if (window.innerWidth <= 768) {
+        luna.style.verticalAlign = "middle";
+        sol.style.verticalAlign = "middle";
+    } else {
+        luna.style.verticalAlign = "top";
+        sol.style.verticalAlign = "top";
+    }
+
     if (!darkModeToggle) {
         console.error('Dark mode toggle button not found!');
         return;
