@@ -3,13 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const sol = document.createElement("img");
     sol.src = "img/sol.png"; 
-    sol.style.height = "1.5em";
-    sol.style.verticalAlign = "middle";
+    sol.style.height = "1em";
+    sol.style.transform = "scale(1.5)";
+    sol.style.verticalAlign = "top";
+    sol.style.horizontalAlign = "center";
 
     const luna = document.createElement("img");
     luna.src = "img/luna-cuneo.png"; 
-    luna.style.height = "1.5em";
-    luna.style.verticalAlign = "middle";
+    luna.style.height = "1em";
+    luna.style.transform = "scale(1.5)";
+    luna.style.verticalAlign = "top";
+    luna.style.horizontalAlign = "center";
     
     if (!darkModeToggle) {
         console.error('Dark mode toggle button not found!');
