@@ -6,13 +6,13 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.25;
     color: #000000;
     background-color: #ffffff;
 }
@@ -26,24 +26,24 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.5rem;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 h2 {
-    font-size: 2rem;
-    line-height: 1.3;
-    border-bottom: 2px solid #009cc8;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    border-bottom: 1px solid #009cc8;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     text-align: justify;
 }
 
@@ -69,7 +69,7 @@ a:hover {
 .main-content {
     min-height: calc(100vh - 140px);
     padding: 2rem 0;
-    margin-top: 80px;
+    margin-top: 2rem;
 }
 
 /* Navigation */
@@ -87,7 +87,7 @@ a:hover {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .toggle-icon {
-    font-size: 1.2rem;
+    font-size: .95rem;
     display: block;
 }
 
@@ -159,14 +159,14 @@ a:hover {
 /* Profile Section */
 .profile-section {
     background-color: #ffffff;
-    padding: 3rem 0;
+    padding: 2rem 0;
     margin-bottom: 0;
 }
 
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 0rem;
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 3rem;
@@ -199,8 +199,10 @@ a:hover {
 }
 
 .profile-info h1 {
+    padding: 0rem 1rem;
     color: #000000;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: -0.75rem;
 }
 
 .title {
@@ -217,13 +219,14 @@ a:hover {
 }
 
 .bio {
+    padding: 0 1rem;
     margin-bottom: 2rem;
 }
 
 .contact-info h3 {
     color: #2c3e50;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .contact-grid {
@@ -233,24 +236,24 @@ a:hover {
 }
 
 .contact-item {
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
 }
 
 /* Publications Section */
 .publications-section {
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 }
 
 .publications-list {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0rem;
 }
 
 .publication {
     background-color: transparent;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 0;
     box-shadow: none;
 }
@@ -258,7 +261,7 @@ a:hover {
 .publication-title {
     color: #000000;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
 }
 
 .publication-authors {
@@ -279,16 +282,24 @@ a:hover {
 
 /* Section Description */
 .section-description {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-style: italic;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.25;
 }
 
 /* Publication Links Container */
 .publication-links {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.course-links {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -316,6 +327,26 @@ a:hover {
 }
 
 .abstract-toggle:hover {
+    background-color: #00c4fb;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.links-toggle {
+    background-color: transparent;
+    color: #00c4fb;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+    transition: none;
+    display: inline-block;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.links-toggle:hover {
     background-color: #00c4fb;
     color: #ffffff;
     text-decoration: none;
@@ -349,21 +380,24 @@ a:hover {
 }
 
 .cite-content {
-    margin-bottom: 0;
-    margin-top: .25rem;
+    margin-bottom: 0rem;
+    margin-top: 0.25rem;
     padding: 0;
     background-color: transparent;
     border-radius: 0;
     border: none;
+    font-size: 12px;
 }
 
 .abstract-content {
-    margin-bottom: 0;
-    margin-top: .25rem;
+    margin-bottom: 0rem;
+    margin-top: 0.25rem;
     padding: 0;
     background-color: transparent;
     border-radius: 0;
+    line-height: 1;
     border: none;
+    font-size: 12px;
 }
 
 /* Working Paper Link Styles */
@@ -372,8 +406,8 @@ a:hover {
 }
 
 .working-paper-link {
-    color: #00c4fb;
-    text-decoration: underline;
+    color: #009cc8;
+    text-decoration: none;
     font-size: inherit;
     cursor: pointer;
 }
@@ -485,7 +519,7 @@ a:hover {
     .profile-container {
         grid-template-columns: 1fr;
         gap: 2rem;
-        text-align: center;
+        text-align: left;
     }
     
     .contact-grid {
@@ -670,28 +704,29 @@ body.dark-mode a:hover {
 }
 
 body.dark-mode .abstract-toggle:hover {
-    background-color: #00c4fb;
+    background-color: #009cc8;
     color: #121212;
     text-decoration: none;
 }
 
 body.dark-mode .cite-toggle {
-    color: #00c4fb;
+    color: #009cc8;
 }
 
 body.dark-mode .cite-toggle:hover {
-    background-color: #00c4fb;
+    background-color: #009cc8;
     color: #121212;
     text-decoration: none;
 }
 
 body.dark-mode .working-paper-link {
-    color: #00c4fb;
+    color: #009cc8;
 }
 
 body.dark-mode .working-paper-link:hover {
-    background-color: #00c4fb;
-    color: #121212;
+    background-color: #009cc8;
+;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -746,8 +781,6 @@ body.dark-mode .timeline-content h3 {
     color: #ffffff;
 }
 
-
-
 body.dark-mode .media-item {
     background-color: #121212;
     border-color: #333333;
@@ -764,4 +797,71 @@ body.dark-mode .footer {
 
 body.dark-mode .policy-details p {
     color: #b0b0b0;
+}
+
+/* Collapsibles*/
+.links {
+    color: #009cc8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.links a:hover, .links label:hover { 
+    background-color: #009cc8;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.abstract-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Smooth displacement */
+    background: transparent;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.abstract-content { 
+    margin-bottom: 0rem;
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    line-height: 1;
+    border: none;
+    font-size: 12px;
+    max-height: 500px;
+    text-align: justify;
+}
+
+.cite-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Smooth displacement */
+    background: transparent;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.cite-content { 
+    margin-bottom: 0rem;
+    margin-top: 0.25rem;
+    margin-left: 0rem;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    line-height: 1;
+    border: none;
+    font-size: 12px;
+    max-height: 500px;
+    text-align: justify;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none; /* Removes the default arrow */
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Removes arrow for Safari */
 }
