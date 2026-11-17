@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showIcon() {
         const isDark = document.body.classList.contains('dark-mode');
-        icon.src = isDark ? 'img/sol.png' : 'img/luna.png';
+        icon.src = isDark ? 'img/sun.png' : 'img/moon.png';
         button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     }
 
