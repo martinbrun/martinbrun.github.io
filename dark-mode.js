@@ -1,58 +1,43 @@
-// Dark mode toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const sol = document.createElement("img");
-    sol.src = "img/sol.png"; 
-    sol.style.height = "1em";
-    sol.style.transform = "scale(1.5)";
-    sol.style.horizontalAlign = "center";
+//MARTIN BRUN WEBSITE. THEME
+//NOVEMBER 2026
 
-    const luna = document.createElement("img");
-    luna.src = "img/luna-cuneo.png"; 
-    luna.style.height = "1em";
-    luna.style.transform = "scale(1.5)";
-    luna.style.horizontalAlign = "center";
-    
-    if (window.innerWidth <= 768) {
-        luna.style.verticalAlign = "middle";
-        sol.style.verticalAlign = "middle";
-    } else {
-        luna.style.verticalAlign = "top";
-        sol.style.verticalAlign = "top";
+//STORAGE
+function readTheme() {
+    try {
+        return localStorage.getItem('darkMode');
+    } catch (e) {
+        return null;
     }
+}
 
-    if (!darkModeToggle) {
-        console.error('Dark mode toggle button not found!');
+function saveTheme(isDark) {
+    try {
+        localStorage.setItem('darkMode', isDark);
+    } catch (e) {
         return;
     }
-    
-    const toggleIcon = darkModeToggle.querySelector('.toggle-icon');
-    const body = document.body;
+}
 
-    // Check for saved dark mode preference or default to light mode
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    
-    // Apply the saved theme
-    if (isDarkMode) {
-        body.classList.add('dark-mode');
-        toggleIcon.textContent = ""; // clear existing content
-        toggleIcon.appendChild(sol);
-    } else {
-        body.classList.remove('dark-mode');
-        toggleIcon.textContent = ""; // clear existing content
-        toggleIcon.appendChild(luna);
+//APPLY
+if (readTheme() !== 'false') {
+    document.body.classList.add('dark-mode');
+}
+
+//TOGGLE
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('dark-mode-toggle');
+    const icon = button.querySelector('.toggle-icon');
+
+    function showIcon() {
+        const isDark = document.body.classList.contains('dark-mode');
+        icon.src = isDark ? 'img/sol.png' : 'img/luna.png';
+        button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     }
 
-    // Toggle dark mode on button click
-    darkModeToggle.addEventListener('click', function() {
-        body.classList.toggle('dark-mode');
-        const isDark = body.classList.contains('dark-mode');
-        
-        // Update icon
-        toggleIcon.textContent = "";
-        toggleIcon.appendChild(isDark ? sol : luna);
-        // Update
-        // Save preference
-        localStorage.setItem('darkMode', isDark);
+    showIcon();
+    button.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        saveTheme(document.body.classList.contains('dark-mode'));
+        showIcon();
     });
 });
